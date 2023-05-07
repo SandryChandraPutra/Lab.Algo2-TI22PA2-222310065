@@ -1,0 +1,36 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Buku{
+    private:
+    string buku1;
+    string buku2;
+
+    public:
+    void setBuku1(string n){
+        buku1 = n;
+    }
+
+    void setBuku2(string j){
+        buku2 = j;
+    }
+
+string getBuku1(){
+    return buku1;  
+}
+
+string getBuku2(){
+    return buku2;
+}
+};
+
+int main(){
+    Buku buku;
+    buku.setBuku1("C++ Coding Book");
+    buku.setBuku2("Java Coding Book");
+
+    cout << "Buku yang dikembalikan : " << buku.getBuku1() << endl;
+    cout << "Buku yang dipinjam : " << buku.getBuku2() << endl;
+    return 0;
+}
